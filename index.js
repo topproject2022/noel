@@ -18,15 +18,15 @@ form.addEventListener('submit', (e) => {
 
 function checker(count) {
     if (count.value < 50) count.value = 50;
-    else if (count.value >= 50 && count.value < 450) {
+    else if (count.value >= 50 && count.value <= 450) {
         depositIndex = 1;
-    } else if (count.value >= 500 && count.value < 3950) {
+    } else if (count.value >= 500 && count.value <= 3950) {
         depositIndex = 2;
-    } else if (count.value >= 4000 && count.value < 9950) {
+    } else if (count.value >= 4000 && count.value <= 9950) {
         depositIndex = 3;
-    } else if (count.value >= 10000 && count.value < 29950) {
+    } else if (count.value >= 10000 && count.value <= 29950) {
         depositIndex = 4;
-    } else if (count.value >= 30000 && count.value < 49950) {
+    } else if (count.value >= 30000 && count.value <= 49950) {
         depositIndex = 5;
     } else if (count.value >= 50000) {
         depositIndex = 6;
